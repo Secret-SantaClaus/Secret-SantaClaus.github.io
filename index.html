@@ -6,8 +6,8 @@
   </head>
 
   <body>
-    <h1>Secret Santax</h1>
-    <form action="https://9nc65v-8080.csb.app/" method="get">
+    <h1>Secret Santa</h1>
+    <form> <!action="https://9nc65v-8080.csb.app/" method="get">
     <div>
       <label for="say">Quelle salutation voulez-vous adresser&nbsp;?</label>
       <input name="say" id="say" value="Salut" />
@@ -20,5 +20,9 @@
       <button>Envoyer mes salutations</button>
     </div>
   </form>
+  <script>
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://9nc65v-8080.csb.app/");
+    xhr.send();</script>
   </body>
 </html>
