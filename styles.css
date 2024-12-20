@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#col1 {
+  float: left;
+  width: 49%;
+}
+
+h1 {
+  font-size: 75px;
+}
+#col2 {
+  float: right;
+  width: 49%;
+  border: 3px black solid;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: xx-large;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 5px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#env {
+  margin-top: 100px;
+}
