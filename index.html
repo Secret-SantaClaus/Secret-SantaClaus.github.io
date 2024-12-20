@@ -7,23 +7,19 @@
 
   <body>
     <h1>Secret Santa</h1>
-    <form> <!action="https://test-h23l.onrender.com/" method="get">
-    <div>
-      <label for="say">Quelle salutation voulez-vous adresser&nbsp;?</label>
-      <input name="say" id="say" value="Salut" />
+    <div id="col1">
+      <h2>Personnes participant :</h2>
+      <pre id="participants"></pre>
     </div>
-    <div>
-      <label for="to">À qui voulez‑vous l'adresser ?</label>
-      <input name="to" value="Maman" />
+    <div id="col2">
+      <h2>Ajouter des participants</h2>
+      <input type="text" placeholder="Nom" id="nm" />
+      <input type="email" placeholder="Email" id="em" />
+      <button>Ajouter</button>
     </div>
-    <div>
-      <button>Envoyer mes salutations</button>
+    <div id="env">
+      <button>Envoyer</button>
     </div>
-  </form>
-  <script>
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://test-h23l.onrender.com/");
-    xhr.send();
-  </script>
+    <script src="./index.mjs" type="module"></script>
   </body>
 </html>
