@@ -1,5 +1,5 @@
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://test-h23l.onrender.com/");
+xhr.open("GET", "https://serveur-8nsb.onrender.com");
 xhr.send();
 
 let nom = [];
