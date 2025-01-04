@@ -2,8 +2,6 @@ const xhr = new XMLHttpRequest();
 xhr.open("GET", "https://test-h23l.onrender.com/");
 xhr.send();
 
-import "./styles.css";
-
 let nom = [];
 let email = [];
 
