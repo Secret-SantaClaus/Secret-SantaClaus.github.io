@@ -2,9 +2,9 @@
 let nom = [];
 let email = [];
 
-let button = document.querySelector("button");
+let btnajt = document.getElementById("btnajt");
 
-button.addEventListener("click", function () {
+btnajt.addEventListener("click", function () {
   let ajoutNom = document.getElementById("nm").value;
   let ajoutEmail = document.getElementById("em").value;
 
@@ -41,7 +41,7 @@ pre.addEventListener("click", function () {
   document.getElementById("em").value = "";
 });
 
-env = document.getElementById("env");
+env = document.getElementById("btnenv");
 env.addEventListener("click", function () {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://serveur-8nsb.onrender.com");
