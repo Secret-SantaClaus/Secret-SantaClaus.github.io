@@ -30,13 +30,13 @@ env.addEventListener("click", function () {
         
   let urln = "nom=["
   for (let i in nom){
-    urln += i+","
+    urln += nom[i] + ","
   }
   urln += "]"
 
   let urle = "email=["
   for (let i in email){
-    urle += i
+    urle += email[i] + ","
   }
   urle += "]"
 
