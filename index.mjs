@@ -1,4 +1,3 @@
-
 let nom = [];
 let email = [];
 
@@ -43,6 +42,7 @@ pre.addEventListener("click", function () {
 
 env = document.getElementById("btnenv");
 env.addEventListener("click", function () {
+  alert("envoyer")
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://serveur-8nsb.onrender.com");
   xhr.send();
