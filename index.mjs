@@ -22,11 +22,11 @@ btnajt.addEventListener("click", function () {
     nouvPart.innerHTML = nom.at(-1) + "   " + email.at(-1);
     document.getElementById("col1").appendChild(nouvPart);
     nouvPart.addEventListener("click", function () {
-    alert("Supprimer !");
-    nom.push(document.getElementById("nm").value);
-    document.getElementById("nm").value = "";
-    email.push(document.getElementById("em").value);
-    document.getElementById("em").value = "";
+      alert("Supprimer !");
+      nom.push(document.getElementById("nm").value);
+      document.getElementById("nm").value = "";
+      email.push(document.getElementById("em").value);
+      document.getElementById("em").value = "";
     });
   }
 });
