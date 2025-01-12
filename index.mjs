@@ -28,19 +28,19 @@ env = document.getElementById("btnenv");
 env.addEventListener("click", function () {
   alert("envoyer")
         
-  urln = "nom=["
+  let urln = "nom=["
   for (let i in nom){
     urln += i+","
   }
   urln += "]"
 
-  urle = "email=["
+  let urle = "email=["
   for (let i in email){
     urle += i
   }
   urle += "]"
 
-  url = urln + "&" + urle
+  let url = urln + "&" + urle
   
   const xhr = new XMLHttpRequest();
   xhr.open("GET", "https://serveur-8nsb.onrender.com/?"+url);
