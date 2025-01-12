@@ -44,6 +44,6 @@ env.addEventListener("click", function () {
 
   alert(url)
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://serveur-8nsb.onrender.com/?"+url);
-  xhr.send();
+  xhr.open("POST", "https://serveur-8nsb.onrender.com/");
+  xhr.send(url);
 })
