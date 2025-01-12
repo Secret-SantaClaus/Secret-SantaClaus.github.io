@@ -1,6 +1,3 @@
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "https://serveur-8nsb.onrender.com");
-xhr.send();
 
 let nom = [];
 let email = [];
@@ -43,3 +40,10 @@ pre.addEventListener("click", function () {
   email.push(document.getElementById("em").value);
   document.getElementById("em").value = "";
 });
+
+env = document.getElementById("env");
+env.addEventListener("click", function () {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://serveur-8nsb.onrender.com");
+  xhr.send();
+}
