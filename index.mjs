@@ -29,13 +29,15 @@ env.addEventListener("click", function () {
   alert("envoyer")
         
   urln = "nom=["
-  for i in nom:
+  for (let i in nom){
     urln += i+","
+  }
   urln += "]"
 
   urle = "email=["
-  for i in email:
+  for (let i in email){
     urle += i
+  }
   urle += "]"
 
   url = urln + "&" + urle
