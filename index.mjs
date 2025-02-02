@@ -28,7 +28,7 @@ env = document.getElementById("btnenv");
 env.addEventListener("click", function () {
   alert("envoyer")
         
-  let urln = "nom=["
+  let urln = "?nom=["
   for (let i in nom){
     urln += nom[i] + ","
   }
