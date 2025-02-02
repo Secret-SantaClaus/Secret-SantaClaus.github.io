@@ -28,17 +28,17 @@ env = document.getElementById("btnenv");
 env.addEventListener("click", function () {
   alert("envoyer")
         
-  let urln = "?nom=["
+  let urln = "?nom=%5B"
   for (let i in nom){
-    urln += nom[i] + ","
+    urln += nom[i] + "%2C"
   }
-  urln += "0]"
+  urln += "0%5D"
 
-  let urle = "email=["
+  let urle = "email=%5B"
   for (let i in email){
-    urle += email[i] + ","
+    urle += email[i] + "%2C"
   }
-  urle += "0]"
+  urle += "0%5D"
 
   let url = urln + "&" + urle
 
