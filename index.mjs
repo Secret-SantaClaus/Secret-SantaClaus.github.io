@@ -20,6 +20,8 @@ btnajt.addEventListener("click", function () {
     
     nouvPart.addEventListener("click", function () {
       alert("Supprimer !");
+      nom.splice(nouvPart.value.split(" ")[0], 1)
+      mail.splice(nouvPart.value.split(" ")[1], 1)
     });
   }
 });
