@@ -8,7 +8,6 @@ btnajt.addEventListener("click", function () {
   let ajoutEmail = document.getElementById("em").value;
 
   if ((ajoutNom != "") & (ajoutEmail != "")) {
-    alert("Bravo !");
     nom.push(ajoutNom);
     document.getElementById("nm").value = "";
     email.push(ajoutEmail);
@@ -27,10 +26,8 @@ btnajt.addEventListener("click", function () {
   }
 });
 
-env = document.getElementById("btnenv");
-env.addEventListener("click", function () {
-  alert("envoyer")
-        
+let env = document.getElementById("btnenv");
+env.addEventListener("click", function () {        
   let urln = "?nom=%5B"
   for (let i in nom){
     urln += nom[i] + "%2C"
@@ -45,7 +42,6 @@ env.addEventListener("click", function () {
 
   let url = urln + "&" + urle
 
-  alert(url)
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "https://serveur-8nsb.onrender.com/"+url);
   xhr.send();
