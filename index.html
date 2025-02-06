@@ -18,10 +18,40 @@
       <button id="btnenv">Envoyer</button>
     </div>
     <div id="col2">
-      <h2>Ajouter des participants</h2>
-      <input type="text" placeholder="Nom" id="nm" />
-      <input type="email" placeholder="Email" id="em" />
-      <button id="btnajt">Ajouter</button>
+      <div id="ajout">
+        <h2>Ajouter des participants</h2>
+        <input type="text" placeholder="Nom" id="nm" />
+        <input type="email" placeholder="Email" id="em" />
+        <button id="btnajt">Ajouter</button>
+      </div>
+      <div id="contenu">
+        <h2>Contenu du mail</h2>
+        <textarea type="textarea" id="txtcontenu" rows="10">
+Bonjour !
+Dans le cadre du Père Noël secret organisé cette année, tu as été désigné pour offrir un cadeau à {Nom_du_destinataire}.
+Nous avons hâte de te retrouver à Noël !
+        </textarea>
+        <p id="attention">
+          N'oublie pas de placer le champs {Nom_du_destinataire} !
+        </p>
+      </div>
+    </div>
+    <div id="FAQ">
+      <h1 id="marche">Comment ça marche ?</h1>
+      <p align="justify" id="explication">
+        Il suffit de remplir les champs de sasie "Nom" et "Email" avec les
+        personnes participant, puis d'appuyer sur le bouton "Ajouter". Si vous
+        vous êtes trompé en écrivant, cliquez sur le nom de la mauvaise
+        personne, elle sera supprimée. Vous pouvez personnaliser le contenu du
+        mail que recevront les participants mais n'oubliez pas d'inclure le
+        champs {Nom_du_destinataire}. Une fois toutes les personnes
+        participantes rentrées et le contenu personnalisé, appuyez sur le bouton
+        "Envoyer". Une alerte devrait vous alertir si vos mails ont été
+        correctement envoyés, mais cela peut prendre jusqu'à une minute, le
+        temps que le serveur redémarre. En cas d'erreurs persistantes contacter
+        le support.
+      </p>
+      <img src="./photo.png" />
     </div>
     <script src="./index.mjs" type="module"></script>
   </body>
