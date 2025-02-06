@@ -18,7 +18,7 @@ btnajt.addEventListener("click", function () {
     nouvPart.innerHTML = nom.at(-1) + "   " + email.at(-1);
     document.getElementById("col1").appendChild(nouvPart);
     
-    nouvPart.addEventListener("click", function () {
+    nouvPart.addEventListener("click", function (nouvPart) {
       alert("Supprimer !");
       nom.splice(nouvPart.value.split(" ")[0], 1)
       mail.splice(nouvPart.value.split(" ")[1], 1)
