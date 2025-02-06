@@ -15,7 +15,7 @@ btnajt.addEventListener("click", function () {
 
     let nouvPart = document.createElement("pre");
     nouvPart.innerHTML = nom.at(-1) + "   " + email.at(-1);
-    document.getElementById("col1").appendChild(nouvPart);
+    document.getElementById("participants").appendChild(nouvPart);
     
     nouvPart.addEventListener("click", function () {
       alert("Supprimer !");
