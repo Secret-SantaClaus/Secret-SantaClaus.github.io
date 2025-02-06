@@ -8,12 +8,16 @@ body {
   width: 49%;
 }
 
-h1 {
+#titre {
   font-size: 75px;
 }
+
 #col2 {
   float: right;
   width: 49%;
+}
+
+#ajout{
   border: 3px black solid;
   border-radius: 10px;
 }
@@ -30,4 +34,31 @@ h2 {
 button {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#contenu {
+  margin-top: 50px;
+}
+
+#txtcontenu {
+  width: 90%;
+}
+
+#attention {
+  color: red;
+}
+
+#FAQ {
+  clear: both;
+  text-align: left;
+}
+
+#marche {
+  margin-left: 10%;
+  font-size: 40px;
+}
+
+#explication {
+  margin-left: 20px;
+  width: 45%;
 }
