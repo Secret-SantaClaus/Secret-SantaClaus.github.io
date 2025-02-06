@@ -21,7 +21,7 @@ btnajt.addEventListener("click", function () {
     nouvPart.addEventListener("click", function () {
       alert("Supprimer !");
       nom.splice(nouvPart.innerHTML.split(" ")[0], 1)
-      mail.splice(nouvPart.innerHTML.split(" ")[1], 1)
+      email.splice(nouvPart.innerHTML.split(" ")[1], 1)
       nouvPart.remove()
     });
   }
