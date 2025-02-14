@@ -39,7 +39,7 @@ env.addEventListener("click", function () {
     urle += email[i] + "%2C"
   }
   urle += "0%5D"
-  let txt = "texte=" + document.querySelector("textarea").value
+  let txt = "texte=" + encodeURI(document.querySelector("textarea").value)
 
   let url = urln + "&" + urle + "&" + txt
   
