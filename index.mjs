@@ -39,9 +39,9 @@ env.addEventListener("click", function () {
     urle += email[i] + "%2C"
   }
   urle += "0%5D"
-  let txt = "&texte=" + documentQuerySelector("textarea").value
+  let txt = "texte=" + document.querySelector("textarea").value
 
-  let url = urln + "&" + urle + txt
+  let url = urln + "&" + urle + "&" + txt
   
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "https://serveur-8nsb.onrender.com/"+url);
