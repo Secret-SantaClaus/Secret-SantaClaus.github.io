@@ -28,20 +28,20 @@ btnajt.addEventListener("click", function () {
 
 let env = document.getElementById("btnenv");
 env.addEventListener("click", function () {        
-  let urln = "?nom=%5B"
+  let urln = "?nom=["
   for (let i in nom){
-    urln += nom[i] + "%2C"
+    urln += nom[i] + ","
   }
-  urln += "0%5D"
+  urln += "0]"
 
-  let urle = "email=%5B"
+  let urle = "email=["
   for (let i in email){
-    urle += email[i] + "%2C"
+    urle += email[i] + ","
   }
-  urle += "0%5D"
-  let txt = "texte=" + encodeURI(document.querySelector("textarea").value)
+  urle += "0]"
+  let txt = "texte=" + document.querySelector("textarea").value
 
-  let url = urln + "&" + urle + "&" + txt
+  let url = encodeURI(urln + "&" + urle + "&" + txt)
   
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "https://serveur-8nsb.onrender.com/"+url);
